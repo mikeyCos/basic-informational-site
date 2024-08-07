@@ -1,8 +1,10 @@
 import http from "http";
 import fs from "fs";
+import express from "express";
 
 const port = 3000;
 
+// Vanilla node
 const server = http.createServer((req, res) => {
   const { dirname } = import.meta;
   const { url } = req;
@@ -43,5 +45,5 @@ const server = http.createServer((req, res) => {
 });
 
 server.listen(port, () => {
-  console.log("Server running...");
+  console.log("Server running with Vanilla NodeJS...");
 });

@@ -1,5 +1,9 @@
 # Changelog
 ---
+### 06 AUG 2024
+- Added `dev-express` script in `package.json`; this targets the Express `app`.
+- Created `app.js` module for Express configuration.
+---
 ### 05 AUG 2024
 - Clicking on the `Home` link will fire a redirect to the root path, `/`, and end the response; i.e. `res.setHeader("Location", "/");`.
 - An `if...else` statement is used to check if the request's URL ends with `.css`; if URL does not end with `.css` a `switch` statement runs, otherwise, the `filepath` and `contentType` are assigned new values corresponding to style sheets.
